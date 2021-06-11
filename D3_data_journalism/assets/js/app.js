@@ -475,8 +475,8 @@ function visualize(data) {
     // We need change the location and size of the state texts, too.
      // do the same for the .stateText elements, but remember to use 'dx'/'dy' and scale appropriately
     d3.selectAll('circle') // d3.selectAll() '.stateText' elements
-    .attr("dy", yScale(d[currentY]))// set the 'dy' attribute to use the yScale() d[currentY]
-    .attr("dx", xScale(d[currentX])) // set the 'dy' attribute to use the xScale() d[currentX]
-    .attr("r", circleRadius); // set the 'r' attribute to be the circleRadius
+      .attr("dy", yScale(d[currentY]))// set the 'dy' attribute to use the yScale() d[currentY]
+      .attr("dx", xScale(d[currentX])) // set the 'dy' attribute to use the xScale() d[currentX]
+      .attr("r", circleRadius); // set the 'r' attribute to be the circleRadius
   };
 }};
